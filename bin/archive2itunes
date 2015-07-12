@@ -12,9 +12,8 @@ use MP3::Tag;
 use Getopt::Long;
 use Pod::Usage;
 
-use Data::Dump;
+our $VERSION = '0.01';
 
-my $VERSION = '0.01';
 my %opt;
 GetOptions(\%opt, 'link|l=s', 'help|h', 'man|m');
 
