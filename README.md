@@ -65,6 +65,16 @@ You can get more detailed usage information at the command line with the followi
 
 Or, by specifying the manual options with `-m` or `--man`.
 
+**CAVEATS**
+
+* Portability
+
+This is only tested on a Mac and it will not work on a PC as currently written. It would be easy to add support for Windows machines, though I do not have a PC to test with. If someone is willing to add that feature I'd be happy to incorporate the changes.
+
+* Speed
+
+The tracks are fetched in a serial fashion, which can take a while if there are many songs (e.g., with a Grateful Dead show). I may add the option to fetch tracks asynchronously but this is not something that will be used often so it shouldn't really matter.
+
 **LICENSE AND COPYRIGHT**
 
 Copyright (C) 2015 S. Evan Staton
