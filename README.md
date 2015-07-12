@@ -5,7 +5,7 @@ Fetch shows from archive.org and add them to your iTunes library from the comman
 
 ***ABOUT***
 
-I love [archive.org](archive.org) for listening to live shows, and one thing that I've always wanted was a simple way to add a show to my iTunes library (without manually downloading the files, opening iTunes, etc.). That's what this script does, it takes a URL as an argument and adds that show to your iTunes library.
+I love [archive.org](archive.org) for listening to live shows, and one thing that I've always wanted was a simple way to add a show to my iTunes library (without manually downloading the files, opening iTunes, etc.). That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album.
 
 ***USAGE***
 
@@ -45,7 +45,9 @@ Please consider [donating](https://archive.org/donate/) to support the maintenan
 
 **INSTALLATION**
 
-    cpanm https://github.com/sestaton/archive2itunes
+    curl -sL cpanmin.us | perl - https://github.com/sestaton/archive2itunes
+
+Note that the above command requires [git](http://git-scm.com/).
 
 **SUPPORT AND DOCUMENTATION**
 
