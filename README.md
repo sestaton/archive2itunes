@@ -5,7 +5,9 @@ Fetch shows from archive.org and add them to your iTunes library from the comman
 
 **ABOUT**
 
-I love [archive.org](archive.org) for listening to live shows, and one thing that I've always wanted was a simple way to add a show to my iTunes library (without manually downloading the files, opening iTunes, etc.). That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album.
+I love listening to live shows on [archive.org](archive.org), and one thing that I've always wanted was a simple way to add a show to my iTunes library. You can download the show and add them manually, but sometimes it would be nice to add a show without having to manually extract the files and open iTunes.
+
+That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album.
 
 **USAGE**
 
@@ -41,7 +43,7 @@ The only required option is a link to a show, which when given, will add that sh
     --------------------------------------------------------
     =====> Complete. Now, fire up iTunes and enjoy!
 
-Please consider [donating](https://archive.org/donate/) to support the maintenance of archive.org, and most importantly, support the bands!
+This is free software that makes use of freely available archived concerts from the Internet Archive. Please consider [donating](https://archive.org/donate/) to support the maintenance of archive.org, and most importantly, support the bands!
 
 **INSTALLATION**
 
@@ -65,15 +67,17 @@ You can get more detailed usage information at the command line with the followi
 
 Or, by specifying the manual options with `-m` or `--man`.
 
+**ISSUES**
+
+Please report issues or feature requests at the issue tracker:
+
+    https://github.com/sestaton/archive2itunes/issues
+
 **CAVEATS**
 
 * Portability
 
 This is only tested on a Mac and it will not work on a PC as currently written. It would be easy to add support for Windows machines, though I do not have a PC to test with. If someone is willing to add that feature I'd be happy to incorporate the changes.
-
-* Speed
-
-The tracks are fetched in a serial fashion, which can take a while if there are many songs (e.g., with a Grateful Dead show). I may add the option to fetch tracks asynchronously but this is not something that will be used often so it shouldn't really matter.
 
 **LICENSE AND COPYRIGHT**
 
