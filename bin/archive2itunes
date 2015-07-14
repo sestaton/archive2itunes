@@ -179,6 +179,7 @@ The modules WWW::Mechanize, HTTP::Tiny, and MP3::Tag are required. See below for
  
 The MIT License should included with the project. 
 If not, it can be found at: L<http://opensource.org/licenses/mit-license.php>
+
 Copyright (C) 2015 S. Evan Staton
  
 =head1 TESTED WITH:
