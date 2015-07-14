@@ -30,6 +30,7 @@ WriteMakefile(
 	'HTTP::Tiny'      => 0,
 	'WWW::Mechanize'  => 0,
 	'MP3::Tag'        => 0,
+	'autodie'         => 0,
     },
     INST_SCRIPT => 'bin',
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
