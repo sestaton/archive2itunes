@@ -23,9 +23,9 @@ pod2usage( -verbose => 2 ) if $opt{man};
 usage() and exit(1) unless $opt{link};
 
 ## get tracks and transfer to iTunes
-my ($files, $info) = fetch_tracks($opt{link});
-print_info($info);
-transfer_to_itunes($files);
+my ( $files, $info ) = fetch_tracks( $opt{link} );
+print_info( $info );
+transfer_to_itunes( $files );
 
 exit;
 #
@@ -38,7 +38,6 @@ sub fetch_tracks {
 
     my @links = $mech->links();
 
-    #dd \@links;
     my $list;
     for my $link (@links) {
 	if (defined $link->text && $link->text eq 'VBR' && $link->url =~ /\.m3u$/) {
@@ -47,7 +46,6 @@ sub fetch_tracks {
 	    $list = $link->url();
 	}
     }
-    #exit;
     
     my $urlbase = 'https://archive.org';
     if (defined $list) {
