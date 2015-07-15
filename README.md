@@ -47,11 +47,11 @@ This is free software that makes use of freely available archived concerts from 
 
 ## INSTALLATION
 
-Perl must be installed, along with a few modules to use this tool. The following will take care of the dependencies.
+Perl must be installed, along with a few modules to use this tool. The following command will take care of the dependencies and install the application.
 
     curl -sL cpanmin.us | perl - https://github.com/sestaton/archive2itunes
 
-Note that the above command requires [git](http://git-scm.com/).
+(Note that the above command requires [git](http://git-scm.com/)).
 
 Alternatively, download a [release](https://github.com/sestaton/archive2itunes/releases), unpack it, and run the following commands.
 
