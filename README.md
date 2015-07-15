@@ -7,7 +7,7 @@ Fetch shows from archive.org and add them to your iTunes library from the comman
 
 I love listening to live shows on [archive.org](archive.org), and one thing that I've always wanted was a simple way to add a show to my iTunes library. You can download the show and add them manually, but sometimes it would be nice to add a show without having to manually extract the files and open iTunes.
 
-That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add music to your iPod and take it with you. Please see the [special note](##SPECIAL NOTE) below about file formats and other applications.
+That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add music to your iPod and take it with you. Please see the [special note](https://github.com/sestaton/archive2itunes#special-note) below about file formats and other applications.
 
 ## USAGE
 
@@ -53,7 +53,7 @@ Perl must be installed, along with a few modules to use this tool. The following
 
 Note that the above command requires [git](http://git-scm.com/).
 
-Alternatively, download a release, unpack it, and run the following commands.
+Alternatively, download a [release](https://github.com/sestaton/archive2itunes/releases), unpack it, and run the following commands.
 
     curl -sL cpanmin.us | perl - --installdeps .
     perl Makefile.PL
