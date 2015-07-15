@@ -7,7 +7,7 @@ Fetch shows from archive.org and add them to your iTunes library from the comman
 
 I love listening to live shows on [archive.org](archive.org), and one thing that I've always wanted was a simple way to add a show to my iTunes library. You can download the show and add them manually, but sometimes it would be nice to add a show without having to manually extract the files and open iTunes.
 
-That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add music to your iPod and take it with you. Please see the (special note)[##SPECIAL NOTE] below about file formats and other applications.
+That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add music to your iPod and take it with you. Please see the [special note](##SPECIAL NOTE) below about file formats and other applications.
 
 ## USAGE
 
@@ -82,7 +82,7 @@ Please report issues or feature requests at the issue tracker:
 
     https://github.com/sestaton/archive2itunes/issues
 
-**SPECIAL NOTE**
+## SPECIAL NOTE
 
 Many people dislike iTunes because it does not support lossless audio codecs like flac. Therefore, it is important that you: 
 
@@ -94,13 +94,13 @@ Many people dislike iTunes because it does not support lossless audio codecs lik
 
 Sorry for the serious tone, but I have a deep respect for the artists and tapers that share music and I'd like to do my part in making sure people can enjoy the music in the best way possible. That means that we should do what we can to respect the music and the wishes of everyone evolved. Thanks for listening!
 
-**CAVEATS**
+## CAVEATS
 
 * Portability
 
 This is only tested on a Mac and it will not work on a PC as currently written. It would be easy to add support for Windows machines, though I do not have a PC to test with. If someone is willing to add that feature I'd be happy to incorporate the changes.
 
-**LICENSE AND COPYRIGHT**
+## LICENSE AND COPYRIGHT
 
 Copyright (C) 2015 S. Evan Staton
 
