@@ -3,13 +3,13 @@ archive2itunes
 
 Fetch shows from archive.org and add them to your iTunes library from the command line
 
-**ABOUT**
+## ABOUT
 
 I love listening to live shows on [archive.org](archive.org), and one thing that I've always wanted was a simple way to add a show to my iTunes library. You can download the show and add them manually, but sometimes it would be nice to add a show without having to manually extract the files and open iTunes.
 
-That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add music to your iPod and take it with you. Please see the (special note)[**SPECIAL NOTE**] below about file formats and other applications.
+That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add music to your iPod and take it with you. Please see the (special note)[##SPECIAL NOTE] below about file formats and other applications.
 
-**USAGE**
+## USAGE
 
 Given no arguments, you will get a usage statement.
 
@@ -45,13 +45,22 @@ The only required option is a link to a show, which when given, will add that sh
 
 This is free software that makes use of freely available archived concerts from the Internet Archive. Please consider [donating](https://archive.org/donate/) to support the maintenance of archive.org, and most importantly, support the bands!
 
-**INSTALLATION**
+## INSTALLATION
+
+Perl must be installed, along with a few modules to use this tool. The following will take care of the dependencies.
 
     curl -sL cpanmin.us | perl - https://github.com/sestaton/archive2itunes
 
 Note that the above command requires [git](http://git-scm.com/).
 
-**SUPPORT AND DOCUMENTATION**
+Alternatively, download a release, unpack it, and run the following commands.
+
+    curl -sL cpanmin.us | perl - --installdeps .
+    perl Makefile.PL
+    make test
+    make install
+
+## SUPPORT AND DOCUMENTATION
 
 You can get basic usage information by typing the name of the program:
 
@@ -67,7 +76,7 @@ You can get more detailed usage information at the command line with the followi
 
 Or, by specifying the manual options with `-m` or `--man`.
 
-**ISSUES**
+## ISSUES
 
 Please report issues or feature requests at the issue tracker:
 
