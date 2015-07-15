@@ -104,5 +104,5 @@ This is only tested on a Mac and it will not work on a PC as currently written. 
 
 Copyright (C) 2015 S. Evan Staton
 
-This program is distributed under the MIT (X11) License, which should be distributed with the package. 
-If not, it can be found here: http://www.opensource.org/licenses/mit-license.php
+This program is distributed under the GPLv3 License, which should be distributed with the package. 
+If not, it can be found here: http://www.gnu.org/licenses/
