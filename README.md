@@ -1,7 +1,9 @@
-archive2itunes [![Build Status](https://travis-ci.org/sestaton/archive2itunes.svg?branch=master)](https://travis-ci.org/sestaton/archive2itunes)
+archive2itunes
 ================
 
 Fetch shows from archive.org and add them to your iTunes library from the command line
+
+[![Build Status](https://travis-ci.org/sestaton/archive2itunes.svg?branch=master)](https://travis-ci.org/sestaton/archive2itunes)
 
 ## ABOUT
 
