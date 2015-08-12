@@ -32,7 +32,8 @@ WriteMakefile(
 	'MP3::Tag'        => 0,
 	'autodie'         => 0,
     },
-    INST_SCRIPT => 'bin',
+    INST_SCRIPT => 'blib/bin',
+    EXE_FILES   => [ 'bin/archive2itunes' ],
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     test  => { TESTS => 't/*.t' },
 );
