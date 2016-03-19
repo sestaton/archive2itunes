@@ -17,7 +17,7 @@ Given no arguments, you will get a usage statement.
 
     $ archive2itunes
 
-    archive2itunes version: 0.01
+    archive2itunes version: 0.02
 
     USAGE: archive2itunes [-l] [-h] [-m]
 
@@ -30,18 +30,26 @@ Given no arguments, you will get a usage statement.
 
 The only required option is a link to a show, which when given, will add that show to your iTunes library.
 
-    $ archive2itunes -l https://archive.org/details/gd67-01-27.aud.hanno.16744.sbeok.shnf
-    =====> Fetching tracks, please be patient........Done fetching tracks.
+    $ archive2itunes -l https://archive.org/details/gd1975-06-17.aud.unknown.87560.flac16
+    =====> Fetching tracks, please be patient................Done fetching tracks.
     =====> Transferring the following information to iTunes:
     --------------------------------------------------------
     Artist: Grateful Dead
-    Show:   1967-01-27 - Avalon Ballroom
-    Track:  1 - Morning Dew
-    Track:  2 - New Potato Caboose
-    Track:  3 - Viola Lee Blues
-    Track:  4 - Cold Rain and Snow
-    Track:  5 - Alligator
-    Track:  6 - Caution
+    Show:   1975-06-17 - Winterland Arena
+    Track:  01 - Bill Graham intro
+    Track:  02 - Crazy Fingers
+    Track:  03 - Beat It On Down The Line
+    Track:  04 - Deal
+    Track:  05 - Big River
+    Track:  06 - Peggio
+    Track:  07 - Me & My Uncle
+    Track:  08 - Help on the Way >
+    Track:  09 - Slipknot! >
+    Track:  10 - Franklin's Tower
+    Track:  11 - intro
+    Track:  12 - Blues For Allah
+    Track:  13 - Sugar Magnolia
+    Track:  14 - U.S. Blues
     --------------------------------------------------------
     =====> Complete. Now, fire up iTunes and enjoy!
 
