@@ -1,4 +1,4 @@
-archive2itunes
+App::Archive2iTunes
 ================
 
 Fetch shows from archive.org and add them to your iTunes library from the command line
