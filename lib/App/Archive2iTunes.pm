@@ -4,6 +4,7 @@ use strict;
 use warnings;
 use autodie;
 use File::Spec;
+use File::Basename;
 use File::Copy qw(move);
 use HTTP::Tiny;
 use WWW::Mechanize;
@@ -81,7 +82,8 @@ sub transfer_to_itunes {
     my $user = `whoami`;
     chomp $user;
     my $itunes = File::Spec->catdir('/', 'Users', $user, 'Music', 'iTunes');
-    my $add_to = File::Spec->catdir($itunes, 'iTunes Music', 'Automatically Add to iTunes');
+    #my $add_to = File::Spec->catdir($itunes, 'iTunes Music', 'Automatically Add to iTunes');
+    my $add_to = File::Spec->catdir($itunes, 'iTunes Media', 'Automatically Add to iTunes.localized');
 
     for my $file (@$files) {
 	my $itunes_file = File::Spec->catfile($add_to, $file);
