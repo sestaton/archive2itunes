@@ -8,7 +8,7 @@ use App::Archive2iTunes;
 use Getopt::Long;
 use Pod::Usage;
 
-our $VERSION = '0.02';
+our $VERSION = '0.02.1';
 
 my %opt;
 GetOptions(\%opt, 'link|l=s', 'help|h', 'man|m');
