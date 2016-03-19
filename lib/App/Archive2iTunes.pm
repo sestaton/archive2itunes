@@ -9,7 +9,7 @@ use File::Copy qw(move);
 use HTTP::Tiny;
 use WWW::Mechanize;
 
-our $VERSION = '0.02';
+our $VERSION = '0.02.1';
 
 sub new {
     my ($class, %args) = @_;
@@ -82,8 +82,21 @@ sub transfer_to_itunes {
     my $user = `whoami`;
     chomp $user;
     my $itunes = File::Spec->catdir('/', 'Users', $user, 'Music', 'iTunes');
-    #my $add_to = File::Spec->catdir($itunes, 'iTunes Music', 'Automatically Add to iTunes');
-    my $add_to = File::Spec->catdir($itunes, 'iTunes Media', 'Automatically Add to iTunes.localized');
+    my $add_to;
+    my $older_mac_itunes = File::Spec->catdir($itunes, 'iTunes Music', 'Automatically Add to iTunes');
+    my $newer_mac_itunes = File::Spec->catdir($itunes, 'iTunes Media', 'Automatically Add to iTunes.localized');
+
+    if (-e $older_mac_itunes) {
+	$add_to = $older_mac_itunes;
+    }
+    elsif (-e $newer_mac_itunes) {
+	$add_to = $newer_mac_itunes;
+    }
+    else {
+	say STDERR "\n[ERROR]: Could not deterimine iTunes configuration.\n".
+	    "Please submit an issue online and indicate your OS and iTunes version at:\n".
+	    "https://github.com/sestaton/archive2itunes/issues\n";
+    }
 
     for my $file (@$files) {
 	my $itunes_file = File::Spec->catfile($add_to, $file);
