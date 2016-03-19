@@ -2,13 +2,13 @@ package App::Archive2iTunes;
 
 use strict;
 use warnings;
+use autodie;
 use File::Spec;
 use File::Copy qw(move);
 use HTTP::Tiny;
 use WWW::Mechanize;
-use MP3::Tag;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
     my ($class, %args) = @_;
@@ -133,10 +133,35 @@ sub get_track_info {
     my $self = shift;
     my ($file, $info) = @_;
     my ($name, $path, $suffix) = fileparse($file, qr/\.[^.]*/);
+
+    # suppress Perl 5.22 warnings from MP3::Tag::parse_prepare
+    # https://github.com/get-iplayer/get_iplayer/commit/9d1391f7a773770f63ea172556fa98ca41a396be
+    local $SIG{__WARN__} = sub {
+	warn @_ unless $_[0] =~ m(^Unescaped left brace in regex is deprecated);
+    };
+    $self->_load_classes('MP3::Tag');
+
     my $mp3 = MP3::Tag->new($file);
 
     my ($title, $track, $artist, $album, $comment, $year, $genre) = $mp3->autoinfo();
     push @{$info->{$artist}{$album}}, $track."-".$title;
 
     return $info;
+}
+
+sub _load_classes {
+    my $self = shift;
+    my @classes = @_;
+
+    for my $class (@classes) {
+        eval {
+            eval "require $class";
+            $class->import();
+            1;
+        } or do {
+            my $error = $@;
+            die "\nERROR: The module $class is required but it couldn't be loaded. ".
+                "Here is the exception: $error." if $error;
+        };
+    }
 }
