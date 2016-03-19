@@ -1,6 +1,11 @@
 Revision history for archive2itunes
 
 Version	Date	Location
+0.02	03/19/2016	Vancouver, BC
+
+- Make script into separate class to faciliate adding methods in a sane way.
+- Suppress warnings from MP3::Tag generated with Perl 5.22.
+
 0.01	07/12/2015	Vancouver, BC
 
 - Initial release.	
