@@ -17,7 +17,7 @@ Given no arguments, you will get a usage statement.
 
     $ archive2itunes
 
-    archive2itunes version: 0.02
+    archive2itunes version: 0.02.1
 
     USAGE: archive2itunes [-l] [-h] [-m]
 
