@@ -96,6 +96,7 @@ sub transfer_to_itunes {
 	say STDERR "\n[ERROR]: Could not deterimine iTunes configuration.\n".
 	    "Please submit an issue online and indicate your OS and iTunes version at:\n".
 	    "https://github.com/sestaton/archive2itunes/issues\n";
+	exit(1);
     }
 
     for my $file (@$files) {
