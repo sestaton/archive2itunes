@@ -7,9 +7,9 @@ Fetch shows from archive.org and add them to your iTunes library from the comman
 
 ## ABOUT
 
-I love listening to live shows on [archive.org](https://archive.org/), and one thing that I've always wanted was a simple way to add a show to my iTunes library. You can download a show and add it manually, but sometimes it would be nice to add a show without having to manually extract the files and open iTunes.
+Listening to live shows on [archive.org](https://archive.org/) works well in the browser, but there is currently no method to add a show to your iTunes library. You can download a show and add it manually, but sometimes it would be nice to add a show without having to manually extract the files and open iTunes.
 
-That's what this script does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add a live show to your iPod and take it with you. Please see the [special note](https://github.com/sestaton/archive2itunes#special-note) below about file formats and other applications.
+That's what this application does, it takes a URL as an argument and adds that show to your iTunes library as an album. And, that's all it does. This is not an API or general tool to get arbitrary formats from archive.org, and I'm in no way advocating you use MP3 or iTunes. This is simply a way to add a live show to your iPod and take it with you. Please see the [special note](https://github.com/sestaton/archive2itunes#special-note) below about file formats and other applications.
 
 ## USAGE
 
